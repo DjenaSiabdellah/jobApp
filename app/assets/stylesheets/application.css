@@ -1,0 +1,110 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/* app/assets/stylesheets/application.css */
+/*.full-width-image {
+    width: 100%;
+    height: auto;
+  } */
+
+  /* app/assets/stylesheets/application.css */
+.full-width-image {
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh; /* 100% of the viewport height */
+    object-fit: cover; /* Ensure the image covers the entire container */
+    position: fixed; /* Fix the image in the background */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Place the image behind other content */
+  }
+  
+  /* Add any additional styles for your content */
+  body {
+    margin: 0; /* Remove default margin to ensure full coverage */
+    /* Add any other body styles as needed */
+  }
+
+
+
+
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+  }
+  
+  .navbar {
+    background-color: #8b8ee9;
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+  } 
+
+  /* footer 
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .content {
+    min-height: calc(100vh - 60px); /* Adjust 60px based on your footer height 
+    padding: 20px;
+ /* }
+  
+  footer {
+  /*  background-color: #8b8ee9; 
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  } */
+
+ 
+  
+
+ 
